@@ -1,0 +1,74 @@
+/* Estilos CSS para hacer el diseño responsivo */
+body {
+    background-image: url("https://i.pinimg.com/564x/2c/00/1c/2c001cf31e142de71ecfea23e2161fba.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(243, 243, 243);
+    text-shadow: 1px 2px 2px black, 0 0 25px rgb(208, 255, 0), 0 0;
+    margin: 10px 0;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+}
+h2{
+    color: #ff1493; /* Rosa intenso */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Sombra suave */
+    font-size: 36px; /* Tamaño de fuente grande */
+    font-family: 'Pacifico', cursive; /* Fuente cursiva elegante */
+    transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7c390;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.video-container,
+.image-container {
+    width: 100%;
+    max-width: 400px; /* Tamaño reducido del video */
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.container4 {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f7c390;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}

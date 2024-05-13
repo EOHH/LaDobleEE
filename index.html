@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text-center">
+            <h2 class="mb-4 romantico2">¡Epa! ¿Quién dejó entrar a la persona más encantadora del lugar?</h2>
+            <img src="img/eresmipersonafavorita.jpg" alt="Logo" class="img-fluid">
+            <h1 class="mt-4">Mi persona favorita 💗</h1>
+        </div>
+        <form autocomplete="off" class="mt-4">
+            <div class="form-group text-center">
+                <label for="nombre1">Hoy te ves bien hermosota</label>
+                <div class="text-center">
+                    <img src="img/michi.jpg" alt="cora" width="150px" height="150px" class="rounded-circle mt-2">
+                </div>
+                <p class="romantico mt-3">El universo espera ansioso escuchar tus palabras de amor. Escribe tu mensaje para continuar.</p>
+                <div class="row justify-content-center">
+                    <div class="col-8"> <!-- Colocamos el input en una columna de 8 -->
+                        <input type="text" class="form-control" id="nombre1" name="nombre1" placeholder="Ingresa el mensaje aquí" pattern="Te amo" required>
+                    </div>
+                    <div class="col-8"> <!-- Colocamos el botón en una columna de 8 -->
+                        <button type="button" class="btn btn-danger btn-block mt-3" onclick="validarCampo()">Ingresar</button>
+                    </div>
+                </div>
+            </div>
+        </form>             
+    </div> 
+    
+    <script>
+        function validarCampo() {
+            var campo = document.getElementById("nombre1").value;
+            if (campo == "") {
+                alert("Por favor, ingresa tu mensaje de amor!");
+            } else {
+                window.location.href='amordtvd.html';
+            }
+        }
+    </script>
+</body>
+</html>

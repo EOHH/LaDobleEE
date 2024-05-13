@@ -1,0 +1,69 @@
+body {
+    background-image: url("https://i.pinimg.com/564x/d9/52/34/d952341800ed42a4891c29787fb1f3e1.jpg");
+    background-size: cover; /* Ajuste para cubrir el ancho completo */
+    background-position: center; /* Centrar la imagen */
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: white;  
+    text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 ;
+    text-align: center;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto; 
+    padding: 20px;
+    background-color: #abf7dd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-right: 40px; /* Desplazamiento hacia la derecha */
+}
+
+
+.imagen {
+    box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 20px auto; /* Margen de 20px arriba y abajo, y centrado horizontalmente */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    width: 50%; /* Cambia el ancho de la imagen según sea necesario */
+    height: auto;
+    animation: gotti 1s infinite alternate;
+}
+
+
+@keyframes gotti {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+h2 {
+    color: rgb(233, 218, 19);  
+    text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 ;
+}
+
+.text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+}
+
+form {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
